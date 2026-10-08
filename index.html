@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лаборатори 04 - Advanced Layout</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Икон ашиглах FontAwesome холбоос -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header / Navigation (Flexbox) -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <i class="fa-solid fa-code"></i> DevPortal
+      </div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#" class="active"><i class="fa-solid fa-house"></i> Нүүр</a></li>
+          <li><a href="#"><i class="fa-solid fa-book-open"></i> Хичээлүүд</a></li>
+          <li><a href="#"><i class="fa-solid fa-cubes"></i> Төслүүд</a></li>
+          <li><a href="#"><i class="fa-solid fa-envelope"></i> Холбоо барих</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="btn-secondary">Нэвтрэх</button>
+        <button class="btn-primary">Бүртгүүлэх</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>CSS Flexbox & Grid Мастер Анги</h1>
+      <p>Орчин үеийн вэб сайтын бүтцийг Flexbox болон Grid систем ашиглан хурдан, хялбар бөгөөд респонсив хэлбэрээр зохион байгуулж сураарай.</p>
+    </div>
+  </section>
+
+  <!-- Main Layout Container (Grid) -->
+  <div class="page-container">
+    
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="section-header">
+        <h2>Онцлох сэдвүүд</h2>
+        <span class="view-all">Бүгдийг үзэх <i class="fa-solid fa-arrow-right"></i></span>
+      </div>
+      
+      <!-- Cards Grid (3+ Columns) -->
+      <div class="card-grid">
+        
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="card-header bg-gradient-1">
+            <span class="card-tag">CSS Grid</span>
+            <i class="fa-solid fa-table-cells-large card-icon"></i>
+          </div>
+          <div class="card-body">
+            <h3>Grid Template Areas</h3>
+            <p>Вэб хуудасны нарийн нийтлэг макетуудыг CSS Grid-ийн area шинж чанараар хялбар бүтэцлэх нь.</p>
+            <div class="card-footer">
+              <span class="author"><i class="fa-regular fa-user"></i> Болдбаатар</span>
+              <button class="card-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card-header bg-gradient-2">
+            <span class="card-tag">Flexbox</span>
+            <i class="fa-solid fa-arrows-left-right-to-line card-icon"></i>
+          </div>
+          <div class="card-body">
+            <h3>Flex Alignment</h3>
+            <p>justify-content болон align-items шинж чанаруудыг ашиглан элементийг төгс төвлөрүүлэх.</p>
+            <div class="card-footer">
+              <span class="author"><i class="fa-regular fa-user"></i> Болдбаатар</span>
+              <button class="card-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card-header bg-gradient-3">
+            <span class="card-tag">Responsive</span>
+            <i class="fa-solid fa-mobile-screen card-icon"></i>
+          </div>
+          <div class="card-body">
+            <h3>Media Queries</h3>
+            <p>Төхөөрөмж бүрийн дэлгэцийн хэмжээнд тохируулан макетыг уян хатан өөрчлөх аргачлал.</p>
+            <div class="card-footer">
+              <span class="author"><i class="fa-regular fa-user"></i> Болдбаатар</span>
+              <button class="card-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card">
+          <div class="card-header bg-gradient-4">
+            <span class="card-tag">UI Design</span>
+            <i class="fa-solid fa-palette card-icon"></i>
+          </div>
+          <div class="card-body">
+            <h3>Modern UI Tricks</h3>
+            <p>CSS Glassmorphism, Gradient border болон сүүдрийн эффект ашиглан дизайн хийх.</p>
+            <div class="card-footer">
+              <span class="author"><i class="fa-regular fa-user"></i> Болдбаатар</span>
+              <button class="card-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </main>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      
+      <div class="sidebar-widget">
+        <h3><i class="fa-solid fa-fire"></i> Сүүлийн үеийн мэдээ</h3>
+        <ul class="widget-list">
+          <li>
+            <a href="#">
+              <span class="date">10 Сар 08</span>
+              <p>Лаборатори 04-ийн даалгавар нэмэгдлээ.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="date">10 Сар 05</span>
+              <p>CSS Grid болон Flexbox-ийн ялгаатай талууд.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="date">09 Сар 28</span>
+              <p>Вэб хөгжүүлэлтийн шинэ трендүүд 2026.</p
